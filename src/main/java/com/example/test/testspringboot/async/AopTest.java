@@ -9,6 +9,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  */
 public class AopTest {
 
+    //static TaskService taskService=new TaskService();
     public static void main(String[] args) {
         AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(AopConfig.class);
         TaskService bean = applicationContext.getBean(TaskService.class);
